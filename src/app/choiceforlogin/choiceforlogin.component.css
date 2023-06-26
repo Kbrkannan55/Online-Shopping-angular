@@ -1,0 +1,28 @@
+.flexing{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bgimg{
+    background-image: url(../../assets/Images/Login.jpg);
+    height: 800px;
+    width: 1046px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h5{
+    
+    background-color: rgb(238, 118, 118);
+    background-color: aliceblue;
+    /* background-image: url(../../assets/Images/red-sample-top.avif); */
+    font-family: ui-san-serif;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+}
+
+h5:hover{
+    transform: scale(1.1);
+    transition: all 0.5s linear;
+}

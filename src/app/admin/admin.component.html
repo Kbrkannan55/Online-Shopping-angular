@@ -1,0 +1,189 @@
+<div class="navigations">
+    <h4 style="font-family: cookie; background-color: antiquewhite;margin-top: 20px;width: 150px;border-radius: 10px 5px 5px;text-align: center;" (click)="openPopup()">ADD</h4>&nbsp;&nbsp;
+    <h4 style="font-family: cookie; background-color: antiquewhite;margin-top: 20px;width: 150px;border-radius: 10px 5px 5px;text-align: center;" (click)="openPopup1()">UPDATE</h4>&nbsp;&nbsp;
+    <h4 style="font-family: cookie; background-color: antiquewhite;margin-top: 20px;width: 150px; border-radius: 10px 5px 5px;text-align: center;" (click)="openPopup2()">DELETE</h4>&nbsp;&nbsp;
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">PRODUCT ID</th>
+            <th scope="col">PRODUCT NAME</th>
+            <th scope="col">PRODUCT PRICE</th>
+            <th scope="col">PRODUCT QUANTITY</th>
+            <th scope="col">PRODUCT TYPE</th>
+            <th scope="col">SEX</th>
+            <th scope="col">PRODUCT BRAND</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.productId}}</td>
+            <td>{{product.productName}}</td>
+            <td>{{product.productPrice}}</td>
+            <td>{{product.productQuantity}}</td>
+                <td>{{product.productType}}</td>
+                <td>{{product.sex}}</td>
+                <td>{{product.productBrand}}</td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+<div class="dialog-box" id="popup">
+    <i class="fa-solid fa-xmark fa-lg" (click)="closePopup()"></i>
+    <div class="form-wrapper">
+      <div class="form-container">
+        <h2>ADD PRODUCTS</h2>
+        <form [formGroup]="AddForm">
+          <label for="name">Product ID</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name.."
+            formControlName="productId"
+            required
+          />
+
+          <label for="name">Product Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Product Name"
+            formControlName="productName"
+            required
+          />
+
+          <label for="phone">Product Price</label>
+          <input
+            type="text"
+            id="price"
+            name="price"
+            placeholder="Price"
+            formControlName="productPrice"
+            required
+          />
+          <label for="name">Product Quantity</label>
+          <input type="name" id="checkin" name="checkin" formControlName="productQuantity" required />
+          <label for="name">Product Type</label>
+          <input
+            type="name"
+            id="name"
+            name="name"
+            placeholder="Product Type"
+            formControlName="productType"
+            required
+          />
+          <label for="phone">Sex</label>
+          <input
+            type="name"
+            id="name"
+            name="name"
+            placeholder="Male/Female"
+            formControlName="sex"
+            required
+          />
+          <label for="phone">Product Brand</label>
+          <input
+            type="name"
+            id="name"
+            name="name"
+            placeholder="Product Brand"
+            formControlName="productBrand"
+            required
+          />
+          <input type="submit" value="Submit" (click)="Add()" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+<div class="dialog-box1" id="popup1" >
+    <i class="fa-solid fa-xmark fa-lg" (click)="closePopup1()"></i>
+    <div class="form-wrapper">
+      <div class="form-container">
+        <h2>UPDATE PRODUCTS</h2>
+        <form>
+            <label for="id">Product Id:</label>
+            <input id="locId" name="locId" type="text" [(ngModel)]="productID" required />
+            <label for="name">Product Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              [(ngModel)]="LocationList.productName"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <label for="Cost">Price :</label>
+            <input
+            type="number"
+              id="cost"
+              name="cost"
+              [(ngModel)]="LocationList.productPrice"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <label for="perday">Product Quantity:</label>
+            <input
+              type="number"
+              id="perDay"
+              name="perDay"
+              [(ngModel)]="LocationList.productQuantity"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <label for="basedOn">Sex : </label>
+            <input
+              type="text"
+              id="basedOn"
+              name="basedOn"
+              [(ngModel)]="LocationList.sex"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <label for="basedOn">Product Brand : </label>
+            <input
+              type="text"
+              id="basedOn"
+              name="basedOn"
+              [(ngModel)]="LocationList.productBrand"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <button (click)="UpdateProductById()">Update</button>
+          </form>
+      </div>
+    </div>
+  </div> 
+
+
+  <div class="dialog-box2" id="popup2">
+    <i class="fa-solid fa-xmark fa-lg" (click)="closePopup2()"></i>
+    <div class="form-wrapper">
+      <div class="form-container">
+        <h2>DELETE PRODUCTS</h2>
+        <form>
+            <label for="id">Product ID:</label>
+            <input
+              type="number"
+              id="locId"
+              name="locId"
+              [(ngModel)]="productID"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <button (click)="deleteProduct()">Delete</button>
+          </form>
+      
+      </div>
+    </div>
+  </div>

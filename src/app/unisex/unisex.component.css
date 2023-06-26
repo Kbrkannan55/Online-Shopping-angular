@@ -1,0 +1,79 @@
+
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+    margin-top: 10px;
+  
+  }
+  
+  .box-container .box {
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 30px;
+    border: .1rem solidrgba(0, 0, 0, 0.2);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+  
+  }
+  
+  .box:hover {
+    transform: scale(1.06);
+  }
+  
+  .box img {
+    height: 18rem;
+    margin: 1rem 0;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+  
+  .box h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+  }
+  
+  .box h6:hover {
+    transform: scale(1.04);
+  }
+  
+  .box .stars {
+    padding: 1rem 0;
+  }
+  
+  .box .stars i {
+    font-size: 1.7rem;
+    color: #ff9f43;
+  }
+  
+  .box span {
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 18px;
+  }
+  
+  .starting-flex{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .flex1{
+    background-image: url(../../assets/Images/Gift-your-love1.jpg);
+    background-size: contain;
+    width: 800px;
+    height: 500px;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+  }
+  
+  .flex2{
+    background-image: url(../../assets/Images/Gift-your-love3.jpg);
+    background-size: contain;
+    width: 800px;
+    height: 500px;
+    background-repeat: no-repeat;
+  }
+  

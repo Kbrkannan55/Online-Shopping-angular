@@ -1,0 +1,112 @@
+
+nav{
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-evenly;
+    height: 70px;
+ 
+    background-color:aliceblue;
+    /* background:  url(../assets/Images/red-sample-top.avif);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.nav-linking{
+    background-color: silver;
+    color: black;
+    border-radius: 8px;
+    width: 70px;
+    height: 28px;
+    text-align: center;
+}
+
+.nav-linking:hover{
+    background-color: rgb(131 10 97);
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+.fa-solid{
+    margin-top: 6px;
+}
+
+.top-left{
+    margin-top: 18px;
+    display: flex;
+    margin-left: -20px;
+}
+
+.top-right{
+    margin-top: 18px;
+    display: flex;
+}
+
+.top-logo{
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: ui-sans-serif;
+}
+
+
+
+
+.footer-top{
+    margin-top: 25px;
+    border-top: solid 0.1px black;
+    border-radius: 55px;
+    display: flex;
+    background-color: aliceblue;
+    justify-content: space-around;
+    border-bottom: solid 0.1px black;
+}
+
+.fa-solid{
+    margin-left: 48px;
+}
+
+
+.fa-regular{
+    margin-left: 50px;
+}
+
+
+.footer-top-word{
+    font-family: ui-sans-serif;
+}
+
+
+.footer-end{
+    margin-top: 15px;
+    display: flex;
+    font-family: ui-sans-serif;
+    justify-content: space-around;
+    border-bottom: solid black 0.1px;
+    border-radius: 50px;
+}
+
+
+.theend{
+   
+    font-family: ui-sans-serif;
+    border-radius: 10px;
+    background-color:aliceblue;
+    color:black;
+}
+
+.paymentmethods{
+    margin-left: 100px;
+}
+
+.copyright{
+    float: right;
+    margin-top: -30px;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}

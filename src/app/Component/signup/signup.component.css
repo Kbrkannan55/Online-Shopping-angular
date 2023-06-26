@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.flexing{
+    display: flex;
+    justify-content: center;
+
+}
+.flex1{
+    background-image: url(../../../assets/Images/signup.jpg);
+    background-size: contain;
+    width: 1000px;
+    height: 1200px;
+    background-repeat: no-repeat;
+}
+
+.form-container{
+    /* background-color: #000; */
+    /* background-image: url('/images/darkbg2.jpg'); */
+    display: flex;
+    justify-content: center;
+    height: 93vh;
+    box-sizing: border-box;  
+}
+.form{
+    width: 400px;
+    height: 330px;
+    /* background-color: #15172b; */
+    padding: 20px;
+    display: table;  /*I need to remember it*/
+}
+
+.login{
+    margin-top:90px;
+}
+
+.signup{
+    margin-top:30px
+}
+
+.title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top:10px;
+    /* color: #eee; */
+}
+
+.input-container{
+    height: 40px;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.input{
+    background-color: #303245;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 14px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px;
+    width: 100%;
+}
+
+
+button{
+    border:0;
+    background-color: rgb(131 10 97);
+    box-sizing: border-box;
+    color:#eee;
+    font-size: 18px;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    width:100%;
+}
+
+button:hover{
+   color:  rgb(131 10 97);
+   background-color: #eee;
+   cursor: pointer;
+}
+
+.msg{
+    padding-top:10px;
+    font-size: 15px;
+}
+
+
+.error{ color: rgb(216, 5, 5);}
+.success{ color:rgb(0, 54, 0);}
+.light{ color:white;}
+
+.link{
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
+    font-size: 16px;
+    display: block;
+    color: black;
+}
+.link:hover{
+    color:red;   
+}

@@ -1,0 +1,26 @@
+<div class="starting-flex">
+    <div class="flex1"></div>
+    <div class="flex2"></div>
+</div>
+<h2 style="text-align: center;font-family: ui-sans-serif;margin-top: 24px;">Products For All</h2>
+<div class="product mt-4">
+    <br>
+    <div class="containers">
+        <div class="box-container">
+            <ng-container *ngFor="let shirt of her">
+                <div class="box">
+                    <img src="../../assets/Images/{{shirt.productBrand}}.jpg" class="card-img" alt="...">
+                    <h6 #prdtname>{{shirt.productName}}</h6>
+                    <p class="card-text fsize2 ms-3"><span class="text-primary">{{shirt.productQuantity}}</span>
+                        Available</p>
+                    <span class="text-success">Rs.{{shirt.productPrice}}</span>
+                    <div class="stars">
+                        <button type="submit" style="color:black;font-weight: bold; border-radius: 3px 3px 5px 5px;" [routerLink]="['payment']">BUY</button>
+                    </div>
+                </div>
+
+            </ng-container>
+        </div>
+    </div>
+    <br><br>
+</div>
